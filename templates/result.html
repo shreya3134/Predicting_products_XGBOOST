@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Predicted Sales for {{ date }}</h1>
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+    <a href="/">Back</a>
+</body>
+</html>
